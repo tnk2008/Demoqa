@@ -38,7 +38,7 @@ namespace Demoqa
             driver.Navigate().GoToUrl("https://demoqa.com/checkbox");
             IWebElement checkbox = driver.FindElement(By.XPath(".//*[@id='tree-node']/ol/li/span/label/span[3]"));
             checkbox.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(4000);
             driver.Quit();
 
 
