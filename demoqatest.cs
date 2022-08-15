@@ -26,7 +26,7 @@ namespace Demoqa
             fullname.SendKeys("Nafees Khan");
             IWebElement email = driver.FindElement(By.XPath(".//*[@id='userEmail']"));
             email.SendKeys("nafeesrazia@yahoo.co.in");
-            Thread.Sleep(4000);
+            Thread.Sleep(3000);
 
             driver.Navigate().GoToUrl("https://demoqa.com/radio-button");
             IWebElement radiobutton = driver.FindElement(By.XPath(".//*[@id='app']/div/div/div[2]/div[2]/div[2]/div[2]/label"));
