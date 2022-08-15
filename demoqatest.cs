@@ -66,7 +66,7 @@ namespace Demoqa
             driver.Navigate().GoToUrl("https://demoqa.com/links");
             IWebElement links = driver.FindElement(By.XPath(".//*[@id='simpleLink']"));
             links.Click();
-            Thread.Sleep(4000);
+            Thread.Sleep(5000);
 
 
 
