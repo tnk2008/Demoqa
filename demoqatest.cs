@@ -15,7 +15,11 @@ namespace Demoqa
     [TestClass]
     public class browser
     {
+        private object doubleClickBtn;
+        private int button;
+        private object jMveg;
 
+        public string Click { get; private set; }
 
         [TestMethod]
         public void Navigation()
@@ -39,15 +43,46 @@ namespace Demoqa
             IWebElement checkbox = driver.FindElement(By.XPath(".//*[@id='tree-node']/ol/li/span/label/span[3]"));
             checkbox.Click();
             Thread.Sleep(4000);
+
+            driver.Navigate().GoToUrl("https://demoqa.com/webtables");
+            IWebElement webtables = driver.FindElement(By.XPath("//*[@id='addNewRecordButton']"));
+            webtables.Click();
+            IWebElement firstname = driver.FindElement(By.XPath("//*[@id='firstName']"));
+            firstname.SendKeys("Tuba");
+            IWebElement lastname = driver.FindElement(By.XPath("//*[@id='lastName']"));
+            lastname.SendKeys("khan");
+
+            Thread.Sleep(4000);
+
+            
+
+            driver.Navigate().GoToUrl("https://demoqa.com/automation-practice-form");
+            IWebElement name = driver.FindElement(By.XPath("//*[@id='firstName']"));
+            name.SendKeys("Tuba");
+            IWebElement last = driver.FindElement(By.XPath("//*[@id='lastName']"));
+            last.SendKeys("khan");
+            Thread.Sleep(6000);
+
+            driver.Navigate().GoToUrl("https://demoqa.com/links");
+            IWebElement links = driver.FindElement(By.XPath(".//*[@id='simpleLink']"));
+            links.Click();
+            Thread.Sleep(4000);
+
+
+
             driver.Quit();
-
-
 
 
         }
 
 
+        
+
+           
+            
+
     }
+
 }
 
 
