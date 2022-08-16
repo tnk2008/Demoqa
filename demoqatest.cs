@@ -33,10 +33,8 @@ namespace Demoqa
             address.SendKeys("Hisings Backa");
             IWebElement permanentaddress = driver.FindElement(By.XPath(".//*[@id='permanentAddress']"));
             permanentaddress.SendKeys("Ovralidsgatan");          
-            IWebElement submit = driver.FindElement(By.XPath(".//*[@id='submit']"));
             
-            submit.Click();
-            Thread.Sleep(4000);
+            Thread.Sleep(3000);
 
             driver.Quit();
         }
