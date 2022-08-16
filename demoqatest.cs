@@ -35,7 +35,7 @@ namespace Demoqa
             driver.Navigate().GoToUrl("https://demoqa.com/radio-button");
             IWebElement radiobutton = driver.FindElement(By.XPath(".//*[@id='app']/div/div/div[2]/div[2]/div[2]/div[2]/label"));
             radiobutton.Click();
-            Thread.Sleep(8000);
+            Thread.Sleep(5000);
 
 
 
