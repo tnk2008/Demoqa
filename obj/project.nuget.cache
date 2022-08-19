@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iOA/ubGdt7WuMI+qs8vNgJTh7Nk5uFGfGcLE73DsntggRCfIqdQtTrR5QBpgjyNhz+f+iO8MCiZS9S7/75WyeQ==",
+  "dgSpecHash": "lGOwdomxXsrWrfNZBnk0YKkNC3GE8dMw4lduKil4onLC0iRAiOHccwKV3P5wsr1/1ZrSJDRZ7imbUrPONE5Nuw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nafee\\OneDrive\\Documents\\selenium\\Demoqa\\Demoqa.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nafee\\.nuget\\packages\\inputsimulator\\1.0.4\\inputsimulator.1.0.4.nupkg.sha512",
     "C:\\Users\\nafee\\.nuget\\packages\\microsoft.codecoverage\\17.3.0\\microsoft.codecoverage.17.3.0.nupkg.sha512",
     "C:\\Users\\nafee\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\nafee\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
@@ -41,5 +42,16 @@
     "C:\\Users\\nafee\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\nafee\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "InputSimulator",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
