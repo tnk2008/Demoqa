@@ -127,30 +127,11 @@ namespace Demoqa
 
 
 
-
-
-
             //Submit the form
             System.Threading.Thread.Sleep(2000);
             IWebElement submit = driver.FindElement(By.Id("submit"));
             js.ExecuteScript("window.scrollBy(0,150)", submit);
             submit.Click();
-
-
-
-
-
-
-            System.Threading.Thread.Sleep(2000);
-
-
-
-           
-
-
-
-
-
 
             System.Threading.Thread.Sleep(2000);
             driver.Quit();
@@ -208,15 +189,6 @@ namespace Demoqa
 
                 IWebDriver driver = new ChromeDriver();
                 IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-
-
-
-
-
-
-
-
-
 
 
 
